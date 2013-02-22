@@ -4,5 +4,4 @@
 application/logs/*
 application/cache/*
 application/config/auth.php
-application/config/config.php
 tests/phpunit/phpunit.xml
