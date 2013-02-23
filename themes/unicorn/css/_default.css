@@ -129,7 +129,7 @@ div#logo span {
 }
 
 /* submit report button */
-div.submit-incident { margin:0; top:20%; }
+div.submit-incident { margin:0; top:80%; }
 div.submit-incident a, .btn_submit {
   text-shadow: 1px 1px 0 #424242;
   -moz-border-radius: 3px;
@@ -335,7 +335,17 @@ body.browser-ie {} /* ie browsers ( aka dinosaurs) */
 body.browser-iphone {} /* iphones (expirimental, best to use Media Queries) */
 
 
+@media screen and (max-width: 768px) {
+   #block-news{float: none;
+    margin: 35px 0 0 0;
+   }
+   #sxtxlogo{
+    max-width: 60%;
+    height: auto;}
+  #block-reports{float: none;
+  }
 
 
+  }
 
 

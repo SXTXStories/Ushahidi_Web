@@ -68,7 +68,7 @@
 			<!-- logo -->
 			<?php if ($banner == NULL): ?>
 			<div id="logo">
-				<h1><a href="<?php echo url::site();?>"> <img src="http://sxtxstories.com/themes/unicorn/images/sxtxstories.png" alt="sxtxstories logo" border="0" > <!--<?php echo $site_name; ?>--> </a></h1>
+				<h1><a href="<?php echo url::site();?>"> <img id="sxtxlogo" src="http://sxtxstories.com/themes/unicorn/images/sxtxstories.png" alt="sxtxstories logo" border="0"> <!--<?php echo $site_name; ?>--> </a></h1>
 				<!--<span><?php echo $site_tagline; ?> </span>-->
 			</div>
 			<?php else: ?>
@@ -76,9 +76,11 @@
 			<?php endif; ?>
 			<!-- / logo -->
 
-			<!-- submit incident -->
+
+            <!-- submit incident -->
 			<?php echo $submit_btn; ?>
 			<!-- / submit incident -->
+
 
 			<?php
 				// Action::main_sidebar - Add Items to the Entry Page Sidebar
@@ -108,6 +110,7 @@
 					<ul>
 						<?php nav::main_tabs($this_page); ?>
 					</ul>
+
 
 				</div>
 				<!-- / mainmenu -->
