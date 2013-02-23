@@ -334,11 +334,6 @@ body.browser-chrome {} /* chrome browsers */
 body.browser-ie {} /* ie browsers ( aka dinosaurs) */
 body.browser-iphone {} /* iphones (expirimental, best to use Media Queries) */
 
-  @media screen and (max-width: 768px) {
-    .clearingfix #content {
-   width:50%;}
-    }
-
 
 
 
