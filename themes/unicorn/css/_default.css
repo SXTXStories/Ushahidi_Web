@@ -324,6 +324,16 @@ span.btn-icon { display:block; position:absolute; height:16px; width:16px; overf
 MEDIA QUERIES & DEVICE STYLES
 ******************************************************************/
 
+  /* new browser classes */
+body.browser-lynx {} /* lynx browsers */
+body.browser-gecko {} /* firefox browsers */
+body.browser-opera {} /* opera browsers */
+body.browser-ns4 {} /* ns4 browsers */
+body.browser-safari {} /* safari browsers */
+body.browser-chrome {} /* chrome browsers */
+body.browser-ie {} /* ie browsers ( aka dinosaurs) */
+body.browser-iphone {} /* iphones (expirimental, best to use Media Queries) */
+
   @media screen and (max-width: 768px) {
     .clearingfix #content {
    width:50%;}
