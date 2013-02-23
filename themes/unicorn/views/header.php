@@ -4,9 +4,9 @@
 	<title><?php echo $page_title.$site_name; ?></title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet" type="text/css">
-    <link rel="apple-touch-icon" href="logo_57.jpg" />
-    <link rel="apple-touch-icon" sizes="logo_72.jpg" />
-    <link rel="apple-touch-icon" sizes="logo_114.jpg" />
+    <link rel="apple-touch-icon" href="/themes/unicorn/images/logo_57.jpg" />
+    <link rel="apple-touch-icon" sizes="/themes/unicorn/images/logo_72.jpg" />
+    <link rel="apple-touch-icon" sizes="/themes/unicorn/images/logo_114.jpg" />
 
 	<?php echo $header_block; ?>
 		<?php
