@@ -4,6 +4,10 @@
 	<title><?php echo $page_title.$site_name; ?></title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet" type="text/css">
+    <link rel="apple-touch-icon" href="logo_57.jpg" />
+    <link rel="apple-touch-icon" sizes="logo_72.jpg" />
+    <link rel="apple-touch-icon" sizes="logo_114.jpg" />
+
 	<?php echo $header_block; ?>
 		<?php
 	// Action::header_scripts - Additional Inline Scripts from Plugins
@@ -63,8 +67,8 @@
 			<!-- logo -->
 			<?php if ($banner == NULL): ?>
 			<div id="logo">
-				<h1><a href="<?php echo url::site();?>"><?php echo $site_name; ?></a></h1>
-				<span><?php echo $site_tagline; ?></span>
+				<h1><a href="<?php echo url::site();?>"> <img src="themes/unicorn/images/sxtxstories.png" alt="sxtxstories logo" border="0" > <!--<?php echo $site_name; ?>--> </a></h1>
+				<!--<span><?php echo $site_tagline; ?> </span>-->
 			</div>
 			<?php else: ?>
 			<a href="<?php echo url::site();?>"><img src="<?php echo $banner; ?>" alt="<?php echo $site_name; ?>" /></a>
