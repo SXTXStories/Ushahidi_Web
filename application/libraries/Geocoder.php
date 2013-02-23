@@ -116,7 +116,14 @@ class Geocoder_Core {
 				$request_url = $feed_url;
 			}
 
-			$georss = file_get_contents($request_url);
+			//$georss = file_get_contents($request_url);
+$ch = curl_init();
+$timeout = 0;
+curl_setopt ($ch, CURLOPT_URL, $request_url);
+curl_setopt ($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt ($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
+$georss = curl_exec($ch);
+curl_close($ch);
 			//$georss = utf8_encode($georss);
 
 			return $georss;
