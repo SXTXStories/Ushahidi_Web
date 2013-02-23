@@ -309,6 +309,17 @@ if (navigator.geolocation) {
 						<span class="example"><?php echo Kohana::lang('ui_main.detailed_location_example'); ?></span>
 					</h4>
 					<?php print form::input('location_name', $form['location_name'], ' class="text long"'); ?>
+					<select id="venue-picker">
+						<option>Venue 1</option>
+						<option>Venue 2</option>
+					</select>
+					
+					<script>
+					// Update form values (jQuery)
+					$("#venue-picker").change(function(){
+						$(this).children()
+					});					
+					</script>
 				</div>
 
 				<!-- News Fields -->
