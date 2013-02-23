@@ -306,7 +306,7 @@
 			// GeoCode
 			$('.btn_find').on('click', function () {
 				geoCode();
-			});
+			});		
 			$('#location_find').bind('keypress', function(e) {
 				var code = (e.keyCode ? e.keyCode : e.which);
 				if(code == 13) { //Enter keycode

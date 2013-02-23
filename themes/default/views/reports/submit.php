@@ -202,6 +202,12 @@
 							</ul>
 						</div>
 						<div style="clear:both;"></div>
+						<?php print form::input('location_find', '', ' title="'.Kohana::lang('ui_main.location_example').'" class="findtext"'); ?>
+						<div style="float:left;margin:9px 0 0 5px;">
+							<input type="button" name="button" id="button" value="<?php echo Kohana::lang('ui_main.find_location'); ?>" class="btn_find" />
+						</div>
+						<div id="find_loading" class="report-find-loading"></div>
+						<div style="clear:both;" id="find_text"><?php echo Kohana::lang('ui_main.pinpoint_location'); ?>.</div>
 <script>
 // -------------------------------------------------- //
 // -------------------------------------------------- //
@@ -223,6 +229,7 @@ if (navigator.geolocation) {
 	// only the first callback is requied. The second
 	// callback - the error handler - and the third
 	// argument - our configuration options - are optional.
+	
 	navigator.geolocation.getCurrentPosition(
 		function( position ){
 
@@ -236,8 +243,9 @@ if (navigator.geolocation) {
 			// Log that this is the initial position.
 			console.log( "Initial Position Found" );
 
-			// Add a marker to the map using the position.
-			myPoint = new OpenLayers.LonLat(position.coords.longitude, position.coords.latitude);
+			// alert(position.coords.latitude+","+position.coords.longitude);
+			$('input#location_find').val(position.coords.latitude+','+position.coords.longitude);
+			geoCode();			
 		},
 		function( error ){
 			console.log( "Something went wrong: ", error );
@@ -290,13 +298,7 @@ if (navigator.geolocation) {
 	);
 
 }
-</script>
-						<?php print form::input('location_find', '', ' title="'.Kohana::lang('ui_main.location_example').'" class="findtext"'); ?>
-						<div style="float:left;margin:9px 0 0 5px;">
-							<input type="button" name="button" id="button" value="<?php echo Kohana::lang('ui_main.find_location'); ?>" class="btn_find" />
-						</div>
-						<div id="find_loading" class="report-find-loading"></div>
-						<div style="clear:both;" id="find_text"><?php echo Kohana::lang('ui_main.pinpoint_location'); ?>.</div>
+</script>						
 					</div>
 				</div>
 				<?php Event::run('ushahidi_action.report_form_location', $id); ?>
