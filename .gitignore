@@ -3,5 +3,4 @@
 *.DS_Store
 application/logs/*
 application/cache/*
-application/config/auth.php
 tests/phpunit/phpunit.xml
