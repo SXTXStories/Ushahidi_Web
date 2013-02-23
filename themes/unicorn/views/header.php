@@ -67,7 +67,7 @@
 			<!-- logo -->
 			<?php if ($banner == NULL): ?>
 			<div id="logo">
-				<h1><a href="<?php echo url::site();?>"> <img src="themes/unicorn/images/sxtxstories.png" alt="sxtxstories logo" border="0" > <!--<?php echo $site_name; ?>--> </a></h1>
+				<h1><a href="<?php echo url::site();?>"> <img src="http://sxtxstories.com/themes/unicorn/images/sxtxstories.png" alt="sxtxstories logo" border="0" > <!--<?php echo $site_name; ?>--> </a></h1>
 				<!--<span><?php echo $site_tagline; ?> </span>-->
 			</div>
 			<?php else: ?>
