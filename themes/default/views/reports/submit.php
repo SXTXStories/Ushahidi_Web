@@ -310,8 +310,25 @@ if (navigator.geolocation) {
 					</h4>
 					<?php print form::input('location_name', $form['location_name'], ' class="text long"'); ?>
 					<select id="venue-picker">
-						<option>Venue 1</option>
-						<option>Venue 2</option>
+						<option>Austin Convention Center</option>
+						<option>AT&T Conference Center </option>
+						<option>Courtyard</option>
+						<option>Driskill</option>
+						<option>Empire</option>
+						<option>Four Seasons</option>
+						<option>Hilton Austin</option>
+						<option>Hilton Garden Inn</option>
+						<option>Hyatt</option>
+						<option>Long Center</option>
+						<option>Meet Up Tent</option>
+						<option>Omni</option>
+						<option>Palmer Events Center</option>
+						<option>Proof Annex</option>
+						<option>Radisson</option>
+						<option>Sheraton</option>
+						<option>SXSW Create</option>
+						<option>Wanderlust</option>
+
 					</select>
 					
 					<script>
