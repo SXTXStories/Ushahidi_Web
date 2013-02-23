@@ -310,6 +310,7 @@ if (navigator.geolocation) {
 					</h4>
 					<?php print form::input('location_name', $form['location_name'], ' class="text long"'); ?>
 					<select id="venue-picker">
+						<option>Select venue name...</option>
 						<option>Austin Convention Center</option>
 						<option>AT&T Conference Center </option>
 						<option>Courtyard</option>
@@ -328,13 +329,14 @@ if (navigator.geolocation) {
 						<option>Sheraton</option>
 						<option>SXSW Create</option>
 						<option>Wanderlust</option>
-
 					</select>
 					
 					<script>
 					// Update form values (jQuery)
 					$("#venue-picker").change(function(){
-						$(this).children()
+						var venue = $('#venue-picker option:selected').val();
+						$('input#location_name').val(venue);
+						$(this).after('<span style="display:inline-block;color:green;padding:0.3em;"><img src="/media/img/icon-tick.png" style="margin-right:0.3em;" />Venue name added</span>');
 					});					
 					</script>
 				</div>
