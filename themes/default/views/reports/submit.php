@@ -244,7 +244,7 @@ if (navigator.geolocation) {
 			console.log( "Initial Position Found" );
 
 			// alert(position.coords.latitude+","+position.coords.longitude);
-			$('input#location_find').val(position.coords.latitude+','+position.coords.longitude);
+			$('input#location_find').val(position.coords.latitude+', '+position.coords.longitude);
 			geoCode();			
 		},
 		function( error ){
