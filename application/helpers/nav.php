@@ -33,48 +33,7 @@ class nav_Core {
 		 	$menu .= ">".Kohana::lang('ui_main.home')."</a></li>";
 		 }
 
-		// Reports List
-		if( ! in_array('reports',$dontshow))
-		{
-			$menu .= "<li><a href=\"".url::site()."reports\" ";
-			$menu .= ($this_page == 'reports') ? " class=\"active\"" : "";
-		 	$menu .= ">".Kohana::lang('ui_main.reports')."</a></li>";
-		 }
-		
-		// Reports Submit
-		if( ! in_array('reports_submit',$dontshow))
-		{
-			if (Kohana::config('settings.allow_reports'))
-			{
-				$menu .= "<li><a href=\"".url::site()."reports/submit\" ";
-				$menu .= ($this_page == 'reports_submit') ? " class=\"active\"":"";
-			 	$menu .= ">".Kohana::lang('ui_main.submit')."</a></li>";
-			}
-		}
-		
-		// Alerts
-		if(! in_array('alerts',$dontshow))
-		{
-			if(Kohana::config('settings.allow_alerts'))
-			{
-				$menu .= "<li><a href=\"".url::site()."alerts\" ";
-				$menu .= ($this_page == 'alerts') ? " class=\"active\"" : "";
-				$menu .= ">".Kohana::lang('ui_main.alerts')."</a></li>";
-			}
-		}
-		
-		// Contacts
-		if( ! in_array('contact',$dontshow))
-		{
-			if (Kohana::config('settings.site_contact_page') AND Kohana::config('settings.site_email') != "")
-			{
-				$menu .= "<li><a href=\"".url::site()."contact\" ";
-				$menu .= ($this_page == 'contact') ? " class=\"active\"" : "";
-			 	$menu .= ">".Kohana::lang('ui_main.contact')."</a></li>";	
-			}
-		}
-		
-		// Custom Pages
+	// Custom Pages
 		
 		if( ! in_array('pages',$dontshow))
 		{
@@ -90,6 +49,42 @@ class nav_Core {
 			}
 		}
 
+	
+		// Reports Submit
+		if( ! in_array('reports_submit',$dontshow))
+		{
+			if (Kohana::config('settings.allow_reports'))
+			{
+				$menu .= "<li><a href=\"".url::site()."reports/submit\" ";
+				$menu .= ($this_page == 'reports_submit') ? " class=\"active\"":"";
+			 	$menu .= ">".Kohana::lang('ui_main.submit')."</a></li>";
+			}
+		}
+		
+
+
+		// Reports List
+		if( ! in_array('reports',$dontshow))
+		{
+			$menu .= "<li><a href=\"".url::site()."reports\" ";
+			$menu .= ($this_page == 'reports') ? " class=\"active\"" : "";
+		 	$menu .= ">".Kohana::lang('ui_main.reports')."</a></li>";
+		 }
+	
+	
+		
+		// Contacts
+		if( ! in_array('contact',$dontshow))
+		{
+			if (Kohana::config('settings.site_contact_page') AND Kohana::config('settings.site_email') != "")
+			{
+				$menu .= "<li><a href=\"".url::site()."contact\" ";
+				$menu .= ($this_page == 'contact') ? " class=\"active\"" : "";
+			 	$menu .= ">".Kohana::lang('ui_main.contact')."</a></li>";	
+			}
+		}
+		
+	
 		echo $menu;
 		
 		// Action::nav_admin_reports - Add items to the admin reports navigation tabs

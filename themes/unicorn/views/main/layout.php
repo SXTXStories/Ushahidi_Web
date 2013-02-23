@@ -1,18 +1,18 @@
 <script type="text/javascript">
 $(function(){
-	
+
 	// show/hide report filters and layers boxes on home page map
 	$("a.toggle").toggle(
-		function() { 
+		function() {
 			$($(this).attr("href")).show();
 			$(this).addClass("active-toggle");
 		},
-		function() { 
+		function() {
 			$($(this).attr("href")).hide();
 			$(this).removeClass("active-toggle");
 		}
 	);
-	
+
 });
 
 </script>
@@ -23,19 +23,19 @@ $(function(){
 		<!-- right column -->
 		<div id="report-map-filter-box" class="clearingfix">
 			<a class="btn toggle" id="filter-menu-toggle" class="" href="#the-filters"><?php echo Kohana::lang('ui_main.filter_reports_by'); ?><span class="btn-icon ic-right">&raquo;</span></a>
-			
+
 			<!-- filters box -->
-			<div id="the-filters" class="map-menu-box">
-			
+			<div id="the-filters" class="map-menu-box"> EMILY
+
 				<?php
 				// Action::main_sidebar_pre_filters - Add Items to the Entry Page before filters
 				Event::run('ushahidi_action.main_sidebar_pre_filters');
 				?>
-				
+
 				<!-- report category filters -->
 				<div id="report-category-filter">
 					<h3><?php echo Kohana::lang('ui_main.category');?></h3>
-			
+
 					<ul id="category_switch" class="category-filters">
 					<?php
 					$color_css = 'class="swatch" style="background-color:#'.$default_map_all.'"';
@@ -64,7 +64,7 @@ $(function(){
 							    ? url::convert_uploaded_to_abs($category_info[2])
 							    : NULL;
 							$category_description = htmlentities(Category_Lang_Model::category_description($category), ENT_QUOTES, "UTF-8");
-	
+
 							$color_css = 'class="swatch" style="background-color:#'.$category_color.'"';
 							if ($category_info[2] != NULL)
 							{
@@ -74,13 +74,13 @@ $(function(){
 									));
 								$color_css = '';
 							}
-	
+
 							echo '<li>'
 							    . '<a href="#" id="cat_'. $category .'" title="'.$category_description.'">'
 							    . '<span '.$color_css.'>'.$category_image.'</span>'
 							    . '<span class="category-title">'.$category_title.'</span>'
 							    . '</a>';
-	
+
 							// Get Children
 							echo '<div class="hide" id="child_'. $category .'">';
 							if (sizeof($category_info[3]) != 0)
@@ -94,7 +94,7 @@ $(function(){
 									    ? url::convert_uploaded_to_abs($child_info[2])
 									    : NULL;
 									$child_description = htmlentities(Category_Lang_Model::category_description($child), ENT_QUOTES, "UTF-8");
-									
+
 									$color_css = 'class="swatch" style="background-color:#'.$child_color.'"';
 									if ($child_info[2] != NULL)
 									{
@@ -102,10 +102,10 @@ $(function(){
 											'src' => $child_image,
 											'style' => 'float:left;padding-right:5px;'
 										));
-	
+
 										$color_css = '';
 									}
-	
+
 									echo '<li style="padding-left:20px;">'
 									    . '<a href="#" id="cat_'. $child .'" title="'.$child_description.'">'
 									    . '<span '.$color_css.'>'.$child_image.'</span>'
@@ -123,7 +123,7 @@ $(function(){
 
 				</div>
 				<!-- / report category filters -->
-				
+
 				<!-- report type filters -->
 				<div id="report-type-filter" class="filters">
 					<h3><?php echo Kohana::lang('ui_main.type'); ?></h3>
@@ -142,15 +142,15 @@ $(function(){
 							</div>
 							<!-- / report type filters -->
 				</div>
-			
+
 				<?php
 				// Action::main_sidebar_post_filters - Add Items to the Entry Page after filters
 				Event::run('ushahidi_action.main_sidebar_post_filters');
 				?>
-						
+
 			</div>
 			<!-- / filters box -->
-			
+
 			<?php
 			if ($layers)
 			{
@@ -180,8 +180,8 @@ $(function(){
 				<?php
 			}
 			?>
-			
-			
+
+
 			<?php
 			if (isset($shares))
 			{
@@ -205,8 +205,8 @@ $(function(){
 				<?php
 			}
 			?>
-			
-			
+
+
 			<!-- additional content -->
 			<?php
 			if (Kohana::config('settings.allow_reports'))
@@ -214,7 +214,7 @@ $(function(){
 				?>
 				<a class="btn toggle" id="how-to-report-menu-toggle" class="" href="#how-to-report-box"><?php echo Kohana::lang('ui_main.how_to_report'); ?> <span class="btn-icon ic-question">&raquo;</span></a>
 				<div id="how-to-report-box" class="map-menu-box">
-					
+
 					<div>
 
 						<!-- Phone -->
@@ -229,7 +229,7 @@ $(function(){
 							<?php } ?>
 						</div>
 						<?php } ?>
-						
+
 						<!-- External Apps -->
 						<?php if (count($external_apps) > 0) { ?>
 						<div style="margin-bottom:10px;">
