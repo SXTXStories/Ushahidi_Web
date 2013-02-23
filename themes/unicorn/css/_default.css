@@ -7,6 +7,10 @@ Author: Caleb Bell
 Author Email: caleb@ushahidi.com
 */
 
+@import url(http://fonts.googleapis.com/css?family=Oxygen);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+
 
 /* Theme Settings
 --------------------*/
@@ -42,7 +46,11 @@ h5, h4 {
 }
 
 /* structural divs */
-body#page { background:black url(/themes/unicorn/images/bg.jpg) repeat; }
+body#page { background:black url(/themes/unicorn/images/bg.jpg) repeat;
+  font-family: "Oxygen", Arial, Helvetica, sans-serif;
+font-weight: 400;
+
+}
 
 div#middle { background:transparent url(../images/bg_top-cap.png) top no-repeat; }
 
@@ -259,7 +267,8 @@ div#underfooter { background:transparent; }
 div.footermenu ul li a {
   text-transform: uppercase;
   font-weight: bold;
-  border-left: 1px solid #666;
+  border-left: 1px solid #ffffff;
+  color: #ffffff;
 }
 .additional-credits {
   margin-top: 18px;

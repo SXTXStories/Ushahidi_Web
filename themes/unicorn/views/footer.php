@@ -6,7 +6,7 @@
 	<!-- / wrapper -->
 
 	<!-- footer -->
-	<div id="footer" class="clearingfix">
+	<div id="footer" class="clearingfix" style="background-color: #605f5d;">
 
 		<div id="underfooter"></div>
 
@@ -69,9 +69,9 @@
 			<!-- / footer menu -->
 
 
-			<h2 class="feedback_title" style="clear:both">
+			<!--<h2 class="feedback_title" style="clear:both">
 				<a href="http://feedback.ushahidi.com/fillsurvey.php?sid=2"><?php echo Kohana::lang('ui_main.feedback'); ?></a>
-			</h2>
+			</h2>-->
 
 
 		</div>
