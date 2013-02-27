@@ -42,20 +42,20 @@
 <?php echo $header_nav; ?>
 
   <!-- top bar-->
-  <div id="top-bar">
+  <!-- <div id="top-bar">-->
     <!-- searchbox -->
-		<div id="searchbox">
+		<!--<div id="searchbox">
 
 			<!-- languages -->
-			<?php echo $languages;?>
+			<!--<?php echo $languages;?>-->
 			<!-- / languages -->
 
 			<!-- searchform -->
-			<?php echo $search; ?>
+			<!--<?php echo $search; ?>-->
 			<!-- / searchform -->
 
-	    </div>
-  </div>
+	    <!--</div>
+  </div> -->
   <!-- / searchbox -->
 
 

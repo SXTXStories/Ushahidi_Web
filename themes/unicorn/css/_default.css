@@ -335,7 +335,7 @@ body.browser-ie {} /* ie browsers ( aka dinosaurs) */
 body.browser-iphone {} /* iphones (expirimental, best to use Media Queries) */
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px){
    #block-news{float: none;
     margin: 35px 0 0 0;
    }
@@ -346,6 +346,12 @@ body.browser-iphone {} /* iphones (expirimental, best to use Media Queries) */
   }
 
 
+@media screen and (max-width: 480px) {
+   #block-news{float: none;
+    margin: 35px 0 0 0;
   }
-
-
+  #sxtxlogo{
+    max-width: 40%;
+    height: auto;}
+  #block-reports{float: none;
+  }

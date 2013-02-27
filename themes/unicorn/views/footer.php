@@ -25,7 +25,7 @@
 
 			<!-- footer menu -->
 			<div class="footermenu">
-				<ul class="clearingfix">
+				<!--<ul class="clearingfix">
 					<li>
 						<a class="item1" href="<?php echo url::site(); ?>">
 							<?php echo Kohana::lang('ui_main.home'); ?>
@@ -54,7 +54,7 @@
 							<?php echo Kohana::lang('ui_main.contact'); ?>
 						</a>
 					</li>
-					<?php endif; ?>
+					<?php endif; ?>   -->
 
 					<?php
 					// Action::nav_main_bottom - Add items to the bottom links
