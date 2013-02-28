@@ -14,6 +14,17 @@
 	// Action::header_scripts - Additional Inline Scripts from Plugins
 	Event::run('ushahidi_action.header_scripts');
 	?>
+    <script type="text/javascript">
+function dropdown() {
+            var ele = document.getElementById("hide");
+            if(ele.style.display == "block") {
+                ele.style.display = "none";
+            } else {
+            ele.style.display = "block";
+            }
+            }
+</script>
+
 </head>
 
 
@@ -111,6 +122,16 @@
 						<?php nav::main_tabs($this_page); ?>
 					</ul>
 
-
 				</div>
+               <div id='mainmenumobile' width='100%' style=''>
+  <a class="mobiledropmenu" href="#" onClick="dropdown()">menu</a>
+<div id="hide" style="display:none">
+            <a href="http://sxtxstories.com/">HOME</a><br>
+            <a href="http://sxtxstories.com/page/index/1">ABOUT</a><br>
+            <a href="http://sxtxstories.com/reports/submit">TELL A STORY</a><br>
+            <a href="http://sxtxstories.com/reports">STORIES</a><br>
+            <a href="http://sxtxstories.com/contact">CONTACT</a>
+         </div>
+     </div>
+
 				<!-- / mainmenu -->
