@@ -8,7 +8,7 @@
 	padding:0;
 	margin:0;
 	width:100%;
-	
+
 	-moz-box-shadow: 1px 1px 1px #CCC;
 	-webkit-box-shadow: 1px 1px 1px #CCC;
 	box-shadow: 1px 1px 1px #CCC;
@@ -48,9 +48,10 @@
 #header_nav_left {
 	float: left;
 	height: 30px;
-	padding:0 100px;
+	padding:0px 0px 0px 100px;
 	margin:0;
 }
+
 
 #header_nav_left li {
 	list-style-type: none;
@@ -90,11 +91,11 @@
 	padding: 5px 0;
 	float:right;
 	top:30px;
-	
+
 	-moz-box-shadow: 1px 1px 1px #CCC;
 	-webkit-box-shadow: 1px 1px 1px #CCC;
 	-o-box-shadow: 1px 1px 1px #CCC;
-	
+
 	box-shadow: 1px 1px 1px #CCC;
 }
 

@@ -197,13 +197,13 @@ div#right { position:absolute; z-index:1000; }
   /*toggle buttons */
   #layers-menu-toggle { position:absolute; top:20px; left:220px; width:60px; }
   #other-deployments-menu-toggle { position:absolute; top:20px; left:322px; width:130px; }
-  #how-to-report-menu-toggle { position:absolute; top:20px; left:780px; width:100px; }
+  #how-to-report-menu-toggle {position:relative; top:20px; left:400px; width:100px; }
 
   #kml_switch,
   #sharing_switch,
-  #how-to-report-box { display:none; position:absolute; top:49px; padding:5px; left:220px; background:#f9f7f8; width:175px;}
+  #how-to-report-box { display:none; position:relative; top:49px; padding:5px; left:220px; background:#f9f7f8; width:175px;}
   #sharing_switch { left:322px; }
-  #how-to-report-box { left:724px; padding-top:10px; }
+  #how-to-report-box { left:400px; padding-top:10px; }
     #how-to-report-box ol { margin-left:22px; }
     #how-to-report-box ol li { margin-bottom:5px; }
 
@@ -346,6 +346,7 @@ body.browser-iphone {} /* iphones (expirimental, best to use Media Queries) */
   }
 
 
+
 @media screen and (max-width: 480px) {
    #block-news{float: none;
     margin: 35px 0 0 0;
@@ -355,3 +356,4 @@ body.browser-iphone {} /* iphones (expirimental, best to use Media Queries) */
     height: auto;}
   #block-reports{float: none;
   }
+
