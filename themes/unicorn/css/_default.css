@@ -376,6 +376,7 @@ text-align: left;
 text-decoration: none;
 text-transform: uppercase;
 width: 52.222225189208984px;
+
 }
 
 @media screen and (max-width: 480px) {
@@ -387,9 +388,17 @@ width: 52.222225189208984px;
     height: auto;}
   #block-reports{float: none;
   }
+  #big-block{max-width:70%;
+height: auto;
+  }
+  #reports-box{max-width:70%;
+    height: auto;}
+
+
   div#mainmenu{
     display:none;
   }
+
   div#mainmenumobile{
 
     border-bottom-left-radius: 2.9861111640930176px;
