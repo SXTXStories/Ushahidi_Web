@@ -238,7 +238,7 @@ table.table-list thead th.date { width:20%; }
 }
 
 /* single report page */
-div#main { padding:15px 10px; }
+div#main { padding:15px 10px;}
 #main .left-col { background:#EEEDEA; position:relative; padding:35px 10px 10px; margin:4px 0 0 18px; width:525px; }
 
 
@@ -391,7 +391,7 @@ width: 52.222225189208984px;
     display:none;
   }
   div#mainmenumobile{
-    display:inline;
+
     border-bottom-left-radius: 2.9861111640930176px;
 border-bottom-right-radius: 2.9861111640930176px;
 border-top-left-radius: 2.9861111640930176px;
@@ -399,10 +399,10 @@ border-top-right-radius: 2.9861111640930176px;
 color: white;
 background-color:gray;
 cursor: auto;
-display: block;
 font-family: Oxygen, Arial, Helvetica, sans-serif;
 font-size: 14.44444465637207px;
 font-weight: bold;
+display:block;
 overflow-x: hidden;
 overflow-y: hidden;
 padding-bottom: 2.9861111640930176px;
@@ -414,7 +414,7 @@ text-align: left;
 text-decoration: none;
 text-transform: uppercase;
 width: 150px;
-z-index:999;
+z-index:99999;
 
   }
 }
