@@ -146,7 +146,7 @@
 				</div>
 			<?php } ?>
 			</div>
-			<div id="rb_map-view" style="display:none; width: 100%; height: 384px; border:1px solid #CCCCCC; margin: 3px auto;">
+			<div id="rb_map-view" style="display:none; width: 100%; min-width: 250px; height: 384px; border:1px solid #CCCCCC; margin: 3px auto;">
 			</div>
 		</div>
 		<!-- /Report listing -->

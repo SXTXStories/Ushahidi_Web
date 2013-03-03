@@ -251,7 +251,8 @@ div.report-additional-reports h4 { position:absolute; float:left; top:-18px; lef
 div.report-additional-reports h5 { font-family: Arial, sans-serif;  }
 
 /* reports page */
-.report_right { width:70%;}
+.report_right { width:100%;
+max-width: 700px;}
 
 /* get alerts page */
 .step-1 h2 {
