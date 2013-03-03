@@ -1955,11 +1955,11 @@ version: 1
 
 /* Reports/Filters Layout */
 #reports-box { float:left; width:600px; }
-#filters-box { float:left; width:280px; margin-left:20px; }
+#filters-box { float:left; width:40%; min-width:225px; margin-left:0px; }
 
 
 /* Report Box Navigation Controls (pagination, view/map toggle...etc) */
-.rb_nav-controls { background:#404040; border:1px solid #ccc; height:35px; color:#dedede; }
+.rb_nav-controls { background:#404040; border:1px solid #ccc; height:35px; min-width:350px; color:#dedede; }
 .rb_nav-controls table { height:inherit; }
 .rb_nav-controls td { border-right:1px solid #ccc; vertical-align:middle; padding:0 6px; }
 .rb_nav-controls td.last { border:none; padding:0 0 0 18px; }
